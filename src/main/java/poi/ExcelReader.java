@@ -32,7 +32,7 @@ public class ExcelReader extends ExcelParser{
 		Iterator<Cell> cellIterator = row.cellIterator();
 		String text = "";
 		while (cellIterator.hasNext()){
-			text = cellIterator.next().getStringCellValue();
+			text += cellIterator.next().getStringCellValue() + " ";
 		}
 
 		resultMap.put("lineTxt",text);
